@@ -60,7 +60,13 @@
   color: white;
 }
 
+.item-list-container{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 78px);
+}
+
 .greeting {
   font-size: 4rem;
-
 }
