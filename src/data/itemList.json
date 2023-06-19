@@ -1,0 +1,204 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product_name": "Cozy Throw Blanket",
+      "description": "A soft and warm throw blanket, perfect for snuggling up on the couch.",
+      "category": "Home Decor",
+      "SKU": "THROW001",
+      "price": 29.99,
+      "image": "throw_blanket.jpg",
+      "quantity": 50
+    },
+    {
+      "id": 2,
+      "product_name": "Stainless Steel Cookware Set",
+      "description": "A high-quality cookware set with durable stainless steel construction.",
+      "category": "Kitchen",
+      "SKU": "COOKSET002",
+      "price": 149.99,
+      "image": "cookware_set.jpg",
+      "quantity": 20
+    },
+    {
+      "id": 3,
+      "product_name": "Memory Foam Mattress",
+      "description": "A comfortable memory foam mattress that provides excellent support for a good night's sleep.",
+      "category": "Bedroom",
+      "SKU": "MATTRESS003",
+      "price": 599.99,
+      "image": "memory_foam_mattress.jpg",
+      "quantity": 10
+    },
+    {
+      "id": 4,
+      "product_name": "LED Desk Lamp",
+      "description": "An energy-efficient LED desk lamp with adjustable brightness levels.",
+      "category": "Office",
+      "SKU": "LAMP004",
+      "price": 39.99,
+      "image": "led_desk_lamp.jpg",
+      "quantity": 30
+    },
+    {
+      "id": 5,
+      "product_name": "Robotic Vacuum Cleaner",
+      "description": "A smart robotic vacuum cleaner that automatically cleans your floors.",
+      "category": "Cleaning",
+      "SKU": "VACUUM005",
+      "price": 199.99,
+      "image": "robotic_vacuum_cleaner.jpg",
+      "quantity": 15
+    },
+    {
+      "id": 6,
+      "product_name": "Bathroom Towel Set",
+      "description": "A set of plush and absorbent towels for your bathroom.",
+      "category": "Bathroom",
+      "SKU": "TOWELSET006",
+      "price": 49.99,
+      "image": "towel_set.jpg",
+      "quantity": 40
+    },
+    {
+      "id": 7,
+      "product_name": "Air Purifier",
+      "description": "An air purifier that filters out pollutants and improves indoor air quality.",
+      "category": "Appliances",
+      "SKU": "PURIFIER007",
+      "price": 129.99,
+      "image": "air_purifier.jpg",
+      "quantity": 25
+    },
+    {
+      "id": 8,
+      "product_name": "Decorative Wall Clock",
+      "description": "A stylish wall clock that adds a touch of elegance to any room.",
+      "category": "Home Decor",
+      "SKU": "CLOCK008",
+      "price": 19.99,
+      "image": "wall_clock.jpg",
+      "quantity": 60
+    },
+    {
+      "id": 9,
+      "product_name": "Cast Iron Skillet",
+      "description": "A versatile cast iron skillet for searing, frying, and baking.",
+      "category": "Kitchen",
+      "SKU": "SKILLET009",
+      "price": 34.99,
+      "image": "cast_iron_skillet.jpg",
+      "quantity": 20
+    },
+    {
+      "id": 10,
+      "product_name": "Cotton Bed Sheets",
+      "description": "Soft and breathable bed sheets made from 100% cotton.",
+      "category": "Bedroom",
+      "SKU": "SHEETS010",
+      "price": 49.99,
+      "image": "bed_sheets.jpg",
+      "quantity": 30
+    },
+    {
+      "id": 11,
+      "product_name": "Desk Organizer",
+      "description": "A compact desk organizer to keep your workspace tidy and organized.",
+      "category": "Office",
+      "SKU": "ORGANIZER011",
+      "price": 14.99,
+      "image": "desk_organizer.jpg",
+      "quantity": 50
+    },
+    {
+      "id": 12,
+      "product_name": "Handheld Vacuum Cleaner",
+      "description": "A portable and lightweight vacuum cleaner for quick cleanups.",
+      "category": "Cleaning",
+      "SKU": "VACUUM012",
+      "price": 69.99,
+      "image": "handheld_vacuum_cleaner.jpg",
+      "quantity": 35
+    },
+    {
+      "id": 13,
+      "product_name": "Shower Curtain",
+      "description": "A water-resistant shower curtain with a stylish design.",
+      "category": "Bathroom",
+      "SKU": "CURTAIN013",
+      "price": 24.99,
+      "image": "shower_curtain.jpg",
+      "quantity": 45
+    },
+    {
+      "id": 14,
+      "product_name": "Toaster Oven",
+      "description": "A compact toaster oven for toasting, baking, and reheating food.",
+      "category": "Appliances",
+      "SKU": "OVEN014",
+      "price": 79.99,
+      "image": "toaster_oven.jpg",
+      "quantity": 15
+    },
+    {
+      "id": 15,
+      "product_name": "Decorative Vase",
+      "description": "A decorative vase that adds a touch of sophistication to your home decor.",
+      "category": "Home Decor",
+      "SKU": "VASE015",
+      "price": 29.99,
+      "image": "decorative_vase.jpg",
+      "quantity": 30
+    },
+    {
+      "id": 16,
+      "product_name": "Non-Stick Cookware Set",
+      "description": "A non-stick cookware set for hassle-free cooking and easy cleanup.",
+      "category": "Kitchen",
+      "SKU": "COOKSET016",
+      "price": 89.99,
+      "image": "nonstick_cookware_set.jpg",
+      "quantity": 25
+    },
+    {
+      "id": 17,
+      "product_name": "Pillows",
+      "description": "A pair of plush pillows for a comfortable and restful sleep.",
+      "category": "Bedroom",
+      "SKU": "PILLOWS017",
+      "price": 39.99,
+      "image": "pillows.jpg",
+      "quantity": 40
+    },
+    {
+      "id": 18,
+      "product_name": "Desk Lamp",
+      "description": "A classic desk lamp with an adjustable arm for task lighting.",
+      "category": "Office",
+      "SKU": "LAMP018",
+      "price": 24.99,
+      "image": "desk_lamp.jpg",
+      "quantity": 60
+    },
+    {
+      "id": 19,
+      "product_name": "Steam Mop",
+      "description": "A steam mop that sanitizes and cleans your floors with ease.",
+      "category": "Cleaning",
+      "SKU": "MOP019",
+      "price": 89.99,
+      "image": "steam_mop.jpg",
+      "quantity": 20
+    },
+    {
+      "id": 20,
+      "product_name": "Bath Towel Set",
+      "description": "A set of luxurious bath towels for a spa-like experience.",
+      "category": "Bathroom",
+      "SKU": "TOWELSET020",
+      "price": 59.99,
+      "image": "bath_towel_set.jpg",
+      "quantity": 35
+    }
+  ]
+}
