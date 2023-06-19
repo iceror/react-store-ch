@@ -1,16 +1,27 @@
+import { useEffect, useState } from "react"
+import { getData } from '../helpers/getData'
+import ItemList from '../Components/ItemList'
+
 const ItemListContainer = () => {
 
-  const greeting = () => {
-    return 'Bienvenidx a La tiendita!'
-  }
 
-  return (<section className="item-list-container">
-    
-    <div>
-      <h1 className="greeting">{greeting()}</h1>
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    getData()
+      .then((res) => {
+        setProducts(res.products)
+        console.log(res.products);
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }, [])
+
+  return (
+    <div className="container my-5">
+      <ItemList products={products} />
     </div>
-  </section>
-
   )
 }
 
