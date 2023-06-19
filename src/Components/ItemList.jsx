@@ -1,4 +1,4 @@
-import ItemCard from '../Components/ItemCard'
+import ItemCard from '../Components/itemCard'
 
 
 const ItemList = ({products}) => {
