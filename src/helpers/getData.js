@@ -1,4 +1,4 @@
-import products from "../data/itemList.json"
+import products from "../data/productList.json"
 
 export const getData = () => {
     return new Promise((resolve, reject) => {
