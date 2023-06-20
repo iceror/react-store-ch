@@ -14,12 +14,11 @@ function App() {
 
       <Routes>
         {/* //Listado de componentes Route */}
-        <Route path="/" element={ <ItemListContainer/> }/>
-        <Route/>
-        <Route/>
-        <Route/>
-
-      </Routes>
+        <Route path="/" element={<ItemListContainer/>} />
+          <Route path="/:categoryId" element={<ItemListContainer/>} />
+          <Route path="/:categoryId/:itemId" element={<ItemDetailContainer />}/>
+          <Route path="*" element={ <Navigate to={"/"}/>}/>
+        </Routes>
 
       {/* <Footer></Footer> */}
     </div>
