@@ -6,14 +6,14 @@ import CartWidget from "./Cart"
 const NavBar = (props) => {
   return (<header>
     <div className="header">
-      <a ><h1 className="header-brand">{props.name}</h1></a> 
+      <Link to='/'><h1 className="header-brand" >{props.name}</h1></Link> 
       <nav className="header-navbar">
-        <a  className="header-link">Decoración</a>
-        <a  className="header-link">Cocina</a>
-        <a  className="header-link">Recámara</a>
-        <a  className="header-link">Baño</a>
-        <a  className="header-link">Oficina</a>
-        <a  className="header-link">Limpieza</a>
+        <Link  className="header-link" to='/decoracion'>Decoración</Link>
+        <Link  className="header-link" to='/cocina'>Cocina</Link>
+        <Link  className="header-link" to='/recamara'>Recámara</Link>
+        <Link  className="header-link" to='/bano'>Baño</Link>
+        <Link  className="header-link" to='/oficina'>Oficina</Link>
+        <Link  className="header-link" to='/articulos-hogar'>Articulos Hogar</Link>
       </nav>
       <CartWidget></CartWidget>
     </div>
