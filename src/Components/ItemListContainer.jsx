@@ -9,15 +9,7 @@ const ItemListContainer = () => {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const [searchParams] = useSearchParams()
-
-  function showProducts(){
-    if(products.length > 0){
-      return <ItemList products={products} />
-    } else {
-      return <h1>Cargando productos</h1>
-    }
-  }
-
+  
   //const search = searchParams.get("search")
   const { categoryId } = useParams()
   useEffect(() => {
@@ -42,8 +34,9 @@ const ItemListContainer = () => {
   return (
     <div className="container my-5">
       {
-
-      showProducts()
+        loading
+          ? <h1>Cargando productos...</h1>
+          : <ItemList products={products} />
       }
     </div>
   )
