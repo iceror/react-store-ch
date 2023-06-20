@@ -5,6 +5,6 @@ export const getData = () => {
         setTimeout(() => {
           resolve(products)
         }, 1000)
-        console.log(products);
+        //console.log(products);
     })
 }
