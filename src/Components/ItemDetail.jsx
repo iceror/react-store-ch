@@ -3,16 +3,16 @@ import { useState } from "react"
 
 const ItemDetail = ({ id, product_name, description, price, image, category }) => {
 
+  console.log(image);
   return (
-    <div>
+    <div className="item-detail">
       <h2>{product_name}</h2>
 
-      <img src={image} alt={product_name} />
+      <img src={`../${image}`} alt={product_name} />
       <p>{description}</p>
 
       <h4>Precio: ${price}</h4>
       <br />
-      <small>categoría: {category}</small>
 
       {/* <ItemCount 
               max={stock}
@@ -21,7 +21,7 @@ const ItemDetail = ({ id, product_name, description, price, image, category }) =
               handleAgregar={handleAgregar}
           /> */}
 
-      <hr />
+      {/* <hr /> */}
       {/* <button onClick={handleVolver} className="btn btn-primary">Volver</button> */}
     </div>
   )

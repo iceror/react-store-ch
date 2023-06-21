@@ -113,3 +113,32 @@ a {
 .view-more:hover {
   cursor: pointer;
 }
+
+.item-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 15rem 10rem 5rem 5rem;
+  grid-template-areas: 
+  'product-name image'
+  'decription image'
+  'none price'
+  'none add-buttons';
+  justify-items: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.item-detail img {
+  grid-area: image;
+  width: 25rem;
+  grid-row: 1 / span 2;
+  border-radius: 5px;
+}
+
+.item-detail h4 {
+  grid-area: price;
+}
+
+.item-detail p {
+  text-align: right;
+}
