@@ -7,7 +7,7 @@
       "category": "decoracion",
       "SKU": "THROW001",
       "price": 29.99,
-      "image": "throw_blanket.jpg",
+      "image": "src/img/cozy-thow-blanket.jpg",
       "quantity": 50
     },
     {
@@ -17,7 +17,7 @@
       "category": "cocina",
       "SKU": "COOKSET002",
       "price": 149.99,
-      "image": "cookware_set.jpg",
+      "image": "src/img/stainless-steel-cookware-set.jpeg",
       "quantity": 20
     },
     {
@@ -27,7 +27,7 @@
       "category": "recamara",
       "SKU": "MATTRESS003",
       "price": 599.99,
-      "image": "memory_foam_mattress.jpg",
+      "image": "src/img/memory-foam-mattress.webp",
       "quantity": 10
     },
     {
@@ -37,7 +37,7 @@
       "category": "oficina",
       "SKU": "LAMP004",
       "price": 39.99,
-      "image": "led_desk_lamp.jpg",
+      "image": "src/img/led-desk-lamp.jpg",
       "quantity": 30
     },
     {
@@ -47,7 +47,7 @@
       "category": "articulos-hogar",
       "SKU": "VACUUM005",
       "price": 199.99,
-      "image": "robotic_vacuum_cleaner.jpg",
+      "image": "src/img/robotic-vacuum-cleaner.jpeg",
       "quantity": 15
     },
     {
@@ -57,7 +57,7 @@
       "category": "bano",
       "SKU": "TOWELSET006",
       "price": 49.99,
-      "image": "towel_set.jpg",
+      "image": "src/img/bathroom-towel-set.jpeg",
       "quantity": 40
     },
     {
@@ -67,7 +67,7 @@
       "category": "articulos-hogar",
       "SKU": "PURIFIER007",
       "price": 129.99,
-      "image": "air_purifier.jpg",
+      "image": "src/img/air-purifier.png",
       "quantity": 25
     },
     {
@@ -77,7 +77,7 @@
       "category": "decoracion",
       "SKU": "CLOCK008",
       "price": 19.99,
-      "image": "wall_clock.jpg",
+      "image": "src/img/decorative-wall-clock.webp",
       "quantity": 60
     },
     {
@@ -87,7 +87,7 @@
       "category": "cocina",
       "SKU": "SKILLET009",
       "price": 34.99,
-      "image": "cast_iron_skillet.jpg",
+      "image": "src/img/cast-iron-skillet.jpeg",
       "quantity": 20
     },
     {
@@ -97,7 +97,7 @@
       "category": "recamara",
       "SKU": "SHEETS010",
       "price": 49.99,
-      "image": "bed_sheets.jpg",
+      "image": "src/img/cotton-bed-sheets.jpeg",
       "quantity": 30
     },
     {
@@ -107,7 +107,7 @@
       "category": "oficina",
       "SKU": "ORGANIZER011",
       "price": 14.99,
-      "image": "desk_organizer.jpg",
+      "image": "src/img/desk-organizer.jpg",
       "quantity": 50
     },
     {
@@ -117,7 +117,7 @@
       "category": "articulos-hogar",
       "SKU": "VACUUM012",
       "price": 69.99,
-      "image": "handheld_vacuum_cleaner.jpg",
+      "image": "src/img/hand-held-vacuum.jpeg",
       "quantity": 35
     },
     {
@@ -127,7 +127,7 @@
       "category": "bano",
       "SKU": "CURTAIN013",
       "price": 24.99,
-      "image": "shower_curtain.jpg",
+      "image": "src/img/shower-curtain.jpeg",
       "quantity": 45
     },
     {
@@ -137,7 +137,7 @@
       "category": "articulos-hogar",
       "SKU": "OVEN014",
       "price": 79.99,
-      "image": "toaster_oven.jpg",
+      "image": "src/img/toaster-oven.webp",
       "quantity": 15
     },
     {
@@ -147,7 +147,7 @@
       "category": "decoracion",
       "SKU": "VASE015",
       "price": 29.99,
-      "image": "decorative_vase.jpg",
+      "image": "src/img/decorative-vase.jpg",
       "quantity": 30
     },
     {
@@ -157,7 +157,7 @@
       "category": "cocina",
       "SKU": "COOKSET016",
       "price": 89.99,
-      "image": "nonstick_cookware_set.jpg",
+      "image": "src/img/non-stick-cookware-set.jpg",
       "quantity": 25
     },
     {
@@ -167,7 +167,7 @@
       "category": "recamara",
       "SKU": "PILLOWS017",
       "price": 39.99,
-      "image": "pillows.jpg",
+      "image": "src/img/pillows.avif",
       "quantity": 40
     },
     {
@@ -177,7 +177,7 @@
       "category": "oficina",
       "SKU": "LAMP018",
       "price": 24.99,
-      "image": "desk_lamp.jpg",
+      "image": "src/img/desk-lamp.jpeg",
       "quantity": 60
     },
     {
@@ -187,7 +187,7 @@
       "category": "articulos-hogar",
       "SKU": "MOP019",
       "price": 89.99,
-      "image": "steam_mop.jpg",
+      "image": "src/img/steam-mop.webp",
       "quantity": 20
     },
     {
@@ -197,7 +197,7 @@
       "category": "bano",
       "SKU": "TOWELSET020",
       "price": 59.99,
-      "image": "bath_towel_set.jpg",
+      "image": "src/img/bath-towel-set.jpeg",
       "quantity": 35
     }
   ]
