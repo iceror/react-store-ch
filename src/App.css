@@ -60,13 +60,56 @@
   color: white;
 }
 
-.item-list-container{ 
+.item-list-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: calc(100vh - 78px);
 }
 
-.greeting {
-  font-size: 4rem;
+
+.item-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item-card {
+  width: 15rem;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px rgb(179, 177, 177);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.item-card h4 {
+  font-weight: 500;
+}
+
+.item-card img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.view-more {
+  border: none;
+  background-color: rgb(38, 58, 75);
+  color: white;
+  width: 5rem;
+  height: 2rem;
+}
+
+.view-more:hover {
+  cursor: pointer;
 }
