@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
   }, [itemId])
 
   return (
-    <div className="container my-5">
+    <div>
       {
         loading
           ? <h1>Cargando productos...</h1>
