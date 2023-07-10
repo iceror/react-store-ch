@@ -82,6 +82,7 @@ a {
 
 .item-card {
   width: 15rem;
+  height: 20rem;
   color: gray;
   display: flex;
   flex-direction: column;
