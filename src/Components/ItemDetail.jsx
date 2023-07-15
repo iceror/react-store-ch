@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
+import QuantityCounter from "./QuantityCounter";
 
-const ItemDetail = ({ id, product_name, description, price, image, category }) => {
+const ItemDetail = ({ id, product_name, description, price, image, category, quantity }) => {
 
-  console.log(image);
   return (
     <div className="item-detail">
       <h2>{product_name}</h2>
@@ -13,6 +13,8 @@ const ItemDetail = ({ id, product_name, description, price, image, category }) =
 
       <h4>Precio: ${price}</h4>
       <br />
+
+      <QuantityCounter quantity={quantity}/>
 
       {/* <ItemCount 
               max={stock}

@@ -123,7 +123,8 @@ a {
   'product-name image'
   'decription image'
   'none price'
-  'none add-buttons';
+  'none add-buttons'
+  'none add-to-cart';
   justify-items: center;
   align-items: center;
   margin: 2rem;
@@ -142,4 +143,23 @@ a {
 
 .item-detail p {
   text-align: right;
+}
+
+.quantity-counter {
+  display: flex;
+  align-items: center;
+  grid-area: add-buttons;
+}
+
+.quantity-counter button {
+  border: none;
+  background-color: rgb(38, 58, 75);
+  color: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+.quantity-counter p {
+  width: 2rem;
+  text-align: center;
 }
