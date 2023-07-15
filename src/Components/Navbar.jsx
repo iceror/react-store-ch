@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import CartWidget from "./Cart"
+import CartWidget from "./CartWidget"
 
 
 
