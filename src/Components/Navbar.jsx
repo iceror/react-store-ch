@@ -15,7 +15,8 @@ const NavBar = (props) => {
         <Link  className="header-link" to='/oficina'>Oficina</Link>
         <Link  className="header-link" to='/articulos-hogar'>Articulos Hogar</Link>
       </nav>
-      <CartWidget></CartWidget>
+      <Link to='/carrito'><CartWidget/></Link>
+      
     </div>
   </header>
   )
