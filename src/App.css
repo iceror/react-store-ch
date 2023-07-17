@@ -120,11 +120,11 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 15rem 10rem 5rem 5rem;
-  grid-template-areas: 
-  'product-name image'
-  'decription image'
-  'none price'
-  'none add-buttons';
+  grid-template-areas:
+    'product-name image'
+    'decription image'
+    'none price'
+    'none add-buttons';
   justify-items: center;
   align-items: center;
   margin: 2rem;
@@ -167,11 +167,37 @@ a {
 
 .add-to-cart {
   width: 8.5rem !important;
-  height: 3rem !important; 
+  height: 3rem !important;
   margin: 1rem;
 }
 
-.add-to-cart:hover, .quantity-counter button:hover {
+.add-to-cart:hover,
+.quantity-counter button:hover {
   cursor: pointer;
   background-color: rgb(62, 95, 124);
+}
+
+.product-cart-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cart-product-img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.delete-bin {
+  width: 2rem;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
 }
