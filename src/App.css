@@ -109,6 +109,7 @@ a {
   color: white;
   width: 5rem;
   height: 2rem;
+  border-radius: .3rem;
 }
 
 .view-more:hover {
@@ -123,8 +124,7 @@ a {
   'product-name image'
   'decription image'
   'none price'
-  'none add-buttons'
-  'none add-to-cart';
+  'none add-buttons';
   justify-items: center;
   align-items: center;
   margin: 2rem;
@@ -157,9 +157,16 @@ a {
   color: white;
   width: 2rem;
   height: 2rem;
+  border-radius: .3rem;
 }
 
 .quantity-counter p {
   width: 2rem;
   text-align: center;
+}
+
+.add-to-cart {
+  width: 8.5rem !important;
+  height: 3rem !important; 
+  margin: 1rem;
 }
