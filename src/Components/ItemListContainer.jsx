@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { getData } from '../helpers/getData'
 import ItemList from '../Components/ItemList'
 import { useParams } from 'react-router-dom'
 import { useSearchParams } from 'react-router-dom'
@@ -12,17 +11,19 @@ const ItemListContainer = () => {
   const [loading, setLoading] = useState(true)
   const [searchParams] = useSearchParams()
 
-  //const search = searchParams.get("search")
   const { categoryId } = useParams()
   useEffect(() => {
     setLoading(true)
-    // armar ref
+
     const productsRef = collection(database, 'products');
     getDocs(productsRef)
       .then((response) => {
-        const productsArray = response.docs.map((doc) => doc.data())
-        /* console.log(categoryId)
-        console.log(productsArray) */
+        const productsArray = response.docs.map((doc) => {
+          let docData = doc.data()
+          docData.id = doc.id
+          return docData
+        })
+
         if (!categoryId) {
           setProducts(productsArray)
         } else {
