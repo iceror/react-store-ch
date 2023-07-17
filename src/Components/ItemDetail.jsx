@@ -14,7 +14,7 @@ const ItemDetail = ({ id, product_name, description, price, image, category, qua
       <h4>Precio: ${price}</h4>
       <br />
 
-      <QuantityCounter quantity={quantity} id={id}/>
+      <QuantityCounter quantity={quantity} id={id} product_name={product_name}/>
 
       {/* <ItemCount 
               max={stock}
