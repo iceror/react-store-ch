@@ -151,7 +151,7 @@ a {
   grid-area: add-buttons;
 }
 
-.quantity-counter button {
+.quantity-counter button, .back-to-store {
   border: none;
   background-color: rgb(38, 58, 75);
   color: white;
@@ -165,16 +165,23 @@ a {
   text-align: center;
 }
 
-.add-to-cart {
+.add-to-cart, .back-to-store {
   width: 8.5rem !important;
   height: 3rem !important;
   margin: 1rem;
 }
 
 .add-to-cart:hover,
-.quantity-counter button:hover {
+.quantity-counter button:hover, .back-to-store:hover {
   cursor: pointer;
   background-color: rgb(62, 95, 124);
+}
+
+.empty-cart-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .product-cart-div {

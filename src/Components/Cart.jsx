@@ -34,7 +34,7 @@ const Cart = () => {
 
   if (cart.length === 0) {
     return (
-      <div>
+      <div className="empty-cart-div">
         <h2> Tu carrito esta vacio</h2>
         <hr />
         <Link to="/"><button className="back-to-store">Ir a la tienda</button></Link>
@@ -47,7 +47,7 @@ const Cart = () => {
       <h2>Tu compra</h2>
       <hr />
       {
-        cartProducts.map((product) => {
+        cartProducts.forEach((product) => {
           return (
             <div key={product.id} className="product-cart-div">
               <img src={product.image} alt={product.product_name} className="cart-product-img" />
