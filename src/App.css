@@ -170,3 +170,8 @@ a {
   height: 3rem !important; 
   margin: 1rem;
 }
+
+.add-to-cart:hover, .quantity-counter button:hover {
+  cursor: pointer;
+  background-color: rgb(62, 95, 124);
+}
