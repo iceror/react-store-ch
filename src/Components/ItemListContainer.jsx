@@ -21,7 +21,8 @@ const ItemListContainer = () => {
     getDocs(productsRef)
       .then((response) => {
         const productsArray = response.docs.map((doc) => doc.data())
-        console.log(productsArray)
+        /* console.log(categoryId)
+        console.log(productsArray) */
         if (!categoryId) {
           setProducts(productsArray)
         } else {
