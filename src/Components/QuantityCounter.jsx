@@ -1,13 +1,27 @@
-import { useState } from "react";
+import { useState, useContext } from "react"
+import { CartContext } from "../../Context/CartContext"
 
-const QuantityCounter = ({quantity, id}) => {
+
+const QuantityCounter = ({quantity, id, product_name}) => {
   const stock = quantity
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1)
+
+  const { addToCart } = useContext(CartContext)
+
+  const handleAdd = () => {
+    const addedProduct = {
+        id, 
+        count,
+        product_name
+    }
+    
+    addToCart(addedProduct)
+}
 
   const substract = () => {
     // console.log('restando');
-    count > 0 ? setCount(count - 1) : count
+    count > 1 ? setCount(count - 1) : count
   }
 
   const add = () => {
@@ -15,12 +29,14 @@ const QuantityCounter = ({quantity, id}) => {
     count < stock ? setCount(count + 1) : count
   }
 
-  const addToCart = () => {
-    console.log(count, id);
+  // const addToCart = () => {
+  //   console.log(count, id);
 
-    // useContext
+  //   // useContext
 
-  }
+  // }
+
+
 
   return (
     <div className="quantity-counter">
@@ -28,7 +44,7 @@ const QuantityCounter = ({quantity, id}) => {
       <p>{count}</p>
       <button onClick={add}>+</button>
 
-      <button className="add-to-cart" onClick={addToCart}>Agregar al carrito</button>
+      <button className="add-to-cart" onClick={handleAdd}>Agregar al carrito</button>
     </div>
   )
 }
