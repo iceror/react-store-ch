@@ -11,17 +11,8 @@ const Cart = () => {
 
   let [cartProducts, setCartProducts] = useState([])
 
-  console.log('INSIDE CART.JSX', cart)
-
-  // useEffect(() => {
-  //   cart.forEach(async (element) => {
-  //     console.log(element.id, await getProductsFirebase(element.id));
-  //     const productFromFirebase = await getProductsFirebase(element.id);
-  //     cartProducts = cartProducts.push(productFromFirebase)
-  //     setCartProducts([...cartProducts, productFromFirebase]) ;
-  //     console.log('CART PRODUCTS', cartProducts);
-  //   })
-  // }, [])
+  /* console.log('INSIDE CART.JSX', cart)
+  console.log('INSIDE CART PRODUCTS', cartProducts) */
 
   useEffect(() => {
     const fetchCartProducts = async () => {
@@ -48,6 +39,11 @@ const Cart = () => {
       })
   }
 
+  const handleDeleteFromCart = (id) =>{
+    deleteFromCart(id)
+    setCartProducts((prevProducts) => prevProducts.filter((product) => product.id !== id));
+  }
+
   if (cart.length === 0) {
     return (
       <div className="empty-cart-div">
@@ -70,16 +66,16 @@ const Cart = () => {
               <h3>{product.product_name}</h3>
               <h4>${product.price}</h4>
               <h4>{product.count}</h4>
-              <button onClick={() => deleteFromCart(product.id)} className="delete-btn"><img src={trashCan} alt="delete from cart" className="delete-bin"/></button>
+              <button onClick={() => handleDeleteFromCart(product.id)} className="delete-btn"><img src={trashCan} alt="delete from cart" className="delete-bin"/></button>
             </div>
           )
         })
       }
 
-      {/* <div>
+      <div>
         <h3>Total: $ {purchaseTotal}</h3>
         <button onClick={emptyCart} className="empty-cart">Vaciar carrito</button>
-      </div> */}
+      </div> 
     </div>
   )
 
