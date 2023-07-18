@@ -11,13 +11,13 @@ const Cart = () => {
 
   let [cartProducts, setCartProducts] = useState([])
 
-  /* console.log('INSIDE CART.JSX', cart)
-  console.log('INSIDE CART PRODUCTS', cartProducts) */
+  console.log('INSIDE CART.JSX', cart)
+  console.log('INSIDE CART PRODUCTS', cartProducts) 
 
   useEffect(() => {
     const fetchCartProducts = async () => {
       const products = await Promise.all(cart.map(async (element) => {
-        console.log(element.id, await getProductsFirebase(element.id));
+        // console.log(element.id, await getProductsFirebase(element.id));
         const productFromFirebase = await getProductsFirebase(element.id);
         return productFromFirebase;
       }));
@@ -56,7 +56,9 @@ const Cart = () => {
 
   return (
     <div>
+      <div className="your-purchase">
       <h2>Tu compra</h2>
+      </div>
       <hr />
       {
         cartProducts.map((product) => {
@@ -72,9 +74,10 @@ const Cart = () => {
         })
       }
 
-      <div>
-        <h3>Total: $ {purchaseTotal}</h3>
-        <button onClick={emptyCart} className="empty-cart">Vaciar carrito</button>
+      <div className="purchase-total">
+        <h3>Total: $ {purchaseTotal()}</h3>
+        <button className="to-checkout">Terminar la compra</button>
+      <button onClick={emptyCart} className="empty-cart">Vaciar carrito</button>
       </div> 
     </div>
   )
