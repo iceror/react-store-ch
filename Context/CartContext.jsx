@@ -16,7 +16,7 @@ export const CartProvider = ({ children }) => {
   }
 
   const purchaseTotal = () => {
-    return cart.reduce((accumulator, product) => accumulator + product.price * product.cantidad, 0)
+    return cart.reduce((accumulator, product) => accumulator + product.price * product.count, 0)
   }
 
   const emptyCart = () => {
