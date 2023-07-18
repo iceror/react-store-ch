@@ -9,17 +9,33 @@ import trashCan from "../img/bin.png"
 const Cart = () => {
   const { cart, purchaseTotal, deleteFromCart, emptyCart } = useContext(CartContext)
 
-  const [cartProducts, setCartProducts] = useState([])
+  let [cartProducts, setCartProducts] = useState([])
 
   console.log('INSIDE CART.JSX', cart)
 
+  // useEffect(() => {
+  //   cart.forEach(async (element) => {
+  //     console.log(element.id, await getProductsFirebase(element.id));
+  //     const productFromFirebase = await getProductsFirebase(element.id);
+  //     cartProducts = cartProducts.push(productFromFirebase)
+  //     setCartProducts([...cartProducts, productFromFirebase]) ;
+  //     console.log('CART PRODUCTS', cartProducts);
+  //   })
+  // }, [])
+
   useEffect(() => {
-    cart.forEach(async (element) => {
-      console.log(element.id, await getProductsFirebase(element.id));
-      setCartProducts([...cartProducts, await getProductsFirebase(element.id)]);
-    })
-    console.log(cartProducts);
-  }, [])
+    const fetchCartProducts = async () => {
+      const products = await Promise.all(cart.map(async (element) => {
+        console.log(element.id, await getProductsFirebase(element.id));
+        const productFromFirebase = await getProductsFirebase(element.id);
+        return productFromFirebase;
+      }));
+  
+      setCartProducts(products);
+    };
+  
+    fetchCartProducts();
+  }, []);
 
   const getProductsFirebase = async (itemId) => {
     const itemRef = doc(database, "products", itemId)
@@ -47,7 +63,7 @@ const Cart = () => {
       <h2>Tu compra</h2>
       <hr />
       {
-        cartProducts.forEach((product) => {
+        cartProducts.map((product) => {
           return (
             <div key={product.id} className="product-cart-div">
               <img src={product.image} alt={product.product_name} className="cart-product-img" />
