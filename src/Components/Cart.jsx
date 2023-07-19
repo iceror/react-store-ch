@@ -12,7 +12,7 @@ const Cart = () => {
   let [cartProducts, setCartProducts] = useState([])
 
   console.log('INSIDE CART.JSX', cart)
-  console.log('INSIDE CART PRODUCTS', cartProducts) 
+  console.log('INSIDE CART PRODUCTS', cartProducts)
 
   useEffect(() => {
     const fetchCartProducts = async () => {
@@ -21,10 +21,10 @@ const Cart = () => {
         const productFromFirebase = await getProductsFirebase(element.id);
         return productFromFirebase;
       }));
-  
+
       setCartProducts(products);
     };
-  
+
     fetchCartProducts();
   }, []);
 
@@ -36,10 +36,10 @@ const Cart = () => {
       const itemInCartId = cart.find((product) => product.id === docData.id)
       docData.count = itemInCartId.count
       return docData
-      })
+    })
   }
 
-  const handleDeleteFromCart = (id) =>{
+  const handleDeleteFromCart = (id) => {
     deleteFromCart(id)
     setCartProducts((prevProducts) => prevProducts.filter((product) => product.id !== id));
   }
@@ -57,7 +57,7 @@ const Cart = () => {
   return (
     <div>
       <div className="your-purchase">
-      <h2>Tu compra</h2>
+        <h2>Tu compra</h2>
       </div>
       <hr />
       {
@@ -68,7 +68,7 @@ const Cart = () => {
               <h3>{product.product_name}</h3>
               <h4>${product.price}</h4>
               <h4>{product.count}</h4>
-              <button onClick={() => handleDeleteFromCart(product.id)} className="delete-btn"><img src={trashCan} alt="delete from cart" className="delete-bin"/></button>
+              <button onClick={() => handleDeleteFromCart(product.id)} className="delete-btn"><img src={trashCan} alt="delete from cart" className="delete-bin" /></button>
             </div>
           )
         })
@@ -76,9 +76,9 @@ const Cart = () => {
 
       <div className="purchase-total">
         <h3>Total: $ {purchaseTotal()}</h3>
-        <button className="to-checkout">Terminar la compra</button>
-      <button onClick={emptyCart} className="empty-cart">Vaciar carrito</button>
-      </div> 
+        <button className="to-checkout" > <Link to='/checkout' style={{ color: 'white' }}>Terminar la compra</Link></button>
+        <button onClick={emptyCart} className="empty-cart">Vaciar carrito</button>
+      </div>
     </div>
   )
 
