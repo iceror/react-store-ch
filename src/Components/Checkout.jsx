@@ -1,6 +1,9 @@
 const Checkout = () => {
   return (
-    <h2>Checkout</h2>
+    <div>
+      <h2>Checkout</h2>
+      <hr />
+    </div>
   )
 }
 
