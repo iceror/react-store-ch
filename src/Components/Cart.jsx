@@ -17,9 +17,7 @@ const Cart = () => {
   useEffect(() => {
     const fetchCartProducts = async () => {
       const products = await Promise.all(cart.map(async (element) => {
-        // console.log(element.id, await getProductsFirebase(element.id));
-        const productFromFirebase = await getProductsFirebase(element.id);
-        return productFromFirebase;
+        return await getProductsFirebase(element.id);
       }));
 
       setCartProducts(products);
@@ -76,7 +74,7 @@ const Cart = () => {
 
       <div className="purchase-total">
         <h3>Total: $ {purchaseTotal()}</h3>
-        <button className="to-checkout" > <Link to='/checkout' style={{ color: 'white' }}>Terminar la compra</Link></button>
+        <button className="to-checkout" ><Link to='/checkout' style={{ color: 'white' }}>Terminar compra</Link></button>
         <button onClick={emptyCart} className="empty-cart">Vaciar carrito</button>
       </div>
     </div>
