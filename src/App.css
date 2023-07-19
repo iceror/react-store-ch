@@ -112,10 +112,6 @@ a {
   border-radius: .3rem;
 }
 
-.view-more:hover {
-  cursor: pointer;
-}
-
 .item-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -178,7 +174,7 @@ a {
 }
 
 .add-to-cart:hover,
-.quantity-counter button:hover, .back-to-store:hover, .empty-cart:hover, .to-checkout:hover {
+.quantity-counter button:hover, .back-to-store:hover, .empty-cart:hover, .to-checkout:hover, .view-more:hover {
   cursor: pointer;
   background-color: rgb(62, 95, 124);
 }
