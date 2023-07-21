@@ -258,3 +258,13 @@ input::-webkit-inner-spin-button {
 .error-message {
   color: red;
 }
+
+.successful {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-num {
+  text-decoration: underline;
+}
