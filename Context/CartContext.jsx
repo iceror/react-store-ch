@@ -16,7 +16,8 @@ export const CartProvider = ({ children }) => {
   }
 
   const purchaseTotal = () => {
-    return cart.reduce((accumulator, product) => accumulator + product.price * product.count, 0)
+    const total = cart.reduce((accumulator, product) => accumulator + product.price * product.count, 0)
+    return total.toFixed(2)
   }
 
   const emptyCart = () => {
