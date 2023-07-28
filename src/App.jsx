@@ -3,6 +3,7 @@ import ItemListContainer from "./Components/ItemListContainer"
 import ItemDetailContainer from "./Components/ItemDetailContainer"
 import Cart from "./Components/Cart"
 import Checkout from "./Components/Checkout"
+import Footer from "./Components/Footer"
 import './App.css'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { CartProvider } from "../Context/CartContext"
@@ -28,7 +29,7 @@ function App() {
             <Route path="*" element={<Navigate to={"/"} />} />
           </Routes>
 
-          {/* <Footer></Footer> */}
+          <Footer></Footer>
         </div>
       </CartProvider>
     </BrowserRouter>

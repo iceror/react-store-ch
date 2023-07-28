@@ -268,3 +268,32 @@ input::-webkit-inner-spin-button {
 .order-num {
   text-decoration: underline;
 }
+
+.footer {
+  background-color: rgb(38, 58, 75);
+  height: 20rem;
+  margin-top: 2rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  'text contact newsletter';
+  text-align: center;
+}
+
+.text {
+  grid-area: text;
+  padding: 2rem;
+}
+
+.contact {
+  grid-area: contact;
+  padding: 2rem;
+
+}
+
+.newsletter {
+  grid-area: newsletter;
+  padding: 2rem;
+
+}
