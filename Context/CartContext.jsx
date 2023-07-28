@@ -28,13 +28,10 @@ export const CartProvider = ({ children }) => {
     const isInCart = cart.some((product) => addedProduct.id === product.id)
 
     if (isInCart) {
-      console.log('updating....');
       updateCount(addedProduct)
     } else {
-      console.log('adding.....');
       setCart([...cart, addedProduct])
     }
-    console.log('CART: ', cart);
   }
 
   const updateCount = (addedProduct) => {

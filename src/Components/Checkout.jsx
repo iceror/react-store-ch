@@ -59,25 +59,19 @@ const Checkout = () => {
       total: purchaseTotal(),
       date: new Date()
     }
-    console.log('CREATING ORDER....', order);
 
     const outOfStock = [];
 
-    console.log(outOfStock.length);
     if (outOfStock.length === 0) {
       batch.commit()
         .then(() => {
-          console.log("inside 1st then");
           addDoc(ordersRef, order)
             .then((doc) => {
-              console.log("inside 2nd then");
-              console.log(doc);
               setOrderId(doc.id)
               setOrderCreated(true)
             })
             .catch(err => console.log(err))
             .finally(() => {
-              console.log("order created in firebase, emptying cart.......");
               emptyCart()
             })
         })
@@ -88,7 +82,6 @@ const Checkout = () => {
   }
 
   useEffect(() => {
-    console.log('INSIDE EMPTY USEEFFECT');
     const fetchCart = async () => {
       await getProductsInCart()
     }

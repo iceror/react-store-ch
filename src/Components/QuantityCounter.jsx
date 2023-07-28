@@ -21,23 +21,13 @@ const QuantityCounter = ({quantity, id, product_name, price}) => {
 }
 
   const substract = () => {
-    // console.log('restando');
     count > 1 ? setCount(count - 1) : count
   }
 
   const add = () => {
-    // console.log('sumando');
+
     count < stock ? setCount(count + 1) : count
   }
-
-  // const addToCart = () => {
-  //   console.log(count, id);
-
-  //   // useContext
-
-  // }
-
-
 
   return (
     <div className="quantity-counter">

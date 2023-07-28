@@ -10,9 +10,6 @@ const Cart = () => {
 
   let [cartProducts, setCartProducts] = useState([])
 
-  console.log('INSIDE CART.JSX', cart)
-  console.log('INSIDE CART PRODUCTS', cartProducts)
-
   useEffect(() => {
     const fetchCartProducts = async () => {
       const products = await Promise.all(cart.map(async (element) => {

@@ -1,7 +1,6 @@
 import ItemCard from './itemCard'
 
 const ItemList = ({products}) => {
-  // console.log(products);
     return (
         <div>
             <div className='item-list'>
