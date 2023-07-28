@@ -1,7 +1,6 @@
 import { useContext, useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
 import { CartContext } from "../../Context/CartContext"
-
 import { database } from "../firebase/config"
 import { doc, getDoc } from "firebase/firestore";
 import trashCan from "../img/bin.png"
